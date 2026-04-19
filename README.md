@@ -90,12 +90,12 @@ Copy `.env.example` to `.env` and paste in a Groq API key from [console.groq.com
 cp .env.example .env
 # then edit .env
 ```
-### 3. Run the chatbot using Streamlit
+### 3. Use the CLI to run the chatbot (optional)
 
 ```bash
 streamlit run app.py
 ```
-### 4. Use the CLI to run the chatbot (optional)
+### 4. Run the chatbot using Streamlit
 
 ```bash
 python main.py
@@ -128,7 +128,7 @@ One summary file with averaged scores for the entire experiment
 ## 🛠️ Configuration guide
 Default settings are in [src/config.py](src/config.py). The Streamlit sidebar exposes the most useful options at runtime.
 
-| Setting                   | Default                                    | Purpose |
+| Setting                   | Default                                    | Function|
 |---------------------------|--------------------------------------------|---------|
 | `LLM_MODEL`               | `llama-3.3-70b-versatile`                  | Default Groq model. |
 | `AVAILABLE_LLM_MODELS`    | Llama 3.3 70B, Llama 3.1 8B, Gemma2 9B     | Models shown in the UI selector. |
